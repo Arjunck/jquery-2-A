@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click and Double click</title>
+
+	<script src="jquery-3.1.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("p").bind("click",function(){
+			$("<p>This is a click Event</p>").appendTo("body");
+		});
+
+		$("p").bind("dblclick",function(){
+			$("<p>This is a double click Event</p>").appendTo("body");
+		});
+
+		
+	});
+</script>
+
+</head>
+<body>
+
+  <p>Click me!</p>
+
+
+</body>
+</html>
